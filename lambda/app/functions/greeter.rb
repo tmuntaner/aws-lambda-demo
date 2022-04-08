@@ -15,10 +15,10 @@ class Greeter < LambdaHandler
     {
       who_to_greet: [
         {
-          name: 'SUSE',
+          name: 'SUSE'
         },
         {
-          name: 'Rancher',
+          name: 'Rancher'
         },
         {
           name: 'NeuVector'

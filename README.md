@@ -27,14 +27,12 @@ This demo consists of two AWS Lambda functions in an AWS Step Function: `greeter
 
 #### Without Payload
 ```bash
-aws lambda invoke --region eu-central-1 --output text --function-name default-hello_world --cli-binary-format raw-in-base64-out out
-cat out
+aws lambda invoke --region eu-central-1 --output text --function-name default-hello_world --cli-binary-format raw-in-base64-out /tmp/aws-lambda-out > /dev/null && cat /tmp/aws-lambda-out
 ```
 
 #### With Payload
 ```bash
-aws lambda invoke --region eu-central-1 --output text --function-name default-hello_world --cli-binary-format raw-in-base64-out --payload '{"name": "SUSE IT"}' out
-cat out
+aws lambda invoke --region eu-central-1 --output text --function-name default-hello_world --cli-binary-format raw-in-base64-out --payload '{"name": "SUSE IT"}' /tmp/aws-lambda-out > /dev/null && cat /tmp/aws-lambda-out
 ```
 
 ## Teardown

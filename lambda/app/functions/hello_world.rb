@@ -8,12 +8,8 @@ class HelloWorld < LambdaHandler
   end
 
   def process
-    greeting = nil
-    XRay.recorder.capture('easy task') do
-      name = event['name'] || 'World'
-      greeting = "Hello #{name}"
-    end
-    logger.info greeting
+    name = event['name'] || 'World'
+    greeting = "Hello #{name}"
 
     {
       greeting: greeting
