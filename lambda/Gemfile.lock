@@ -21,7 +21,7 @@ GEM
       multi_json (~> 1)
     jmespath (1.6.1)
     multi_json (1.15.0)
-    rubyzip (2.3.2)
+    rubyzip (3.4.0)
 
 PLATFORMS
   ruby
